@@ -1,0 +1,58 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing POST Request</title>
+</head>
+<body>
+    <script>
+        async function testPost() {
+            try {
+                // jiska bhi checke karna hai daal kar bari bari se check kare like put delete post ,get
+                let response = await fetch("/", { method: "POST" });
+                let text = await response.text();
+                console.log(text);
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+        testPost();
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Request</title>
+</head>
+<body>
+    <script>
+        async function testRequest() {
+            try {
+                // Test POST
+                let postResponse = await fetch("/post", { method: "POST" });
+                let postText = await postResponse.text();
+                console.log("POST:", postText);
+
+                // Test PUT
+                let putResponse = await fetch("/", { method: "PUT" });
+                let putText = await putResponse.text();
+                console.log("PUT:", putText);
+
+                // Test DELETE
+                let deleteResponse = await fetch("/", { method: "DELETE" });
+                let deleteText = await deleteResponse.text();
+                console.log("DELETE:", deleteText);
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+        testRequest();
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,20 @@
+{
+  "name": "packagejson4",
+  "version": "1.0.0",
+  "description": "this is my first project",
+  "main": "Package.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "this",
+    "is",
+    "my",
+    "code"
+  ],
+  "author": "rajnish raj bharti",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0"
+  }
+}

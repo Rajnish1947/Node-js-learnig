@@ -1,0 +1,9 @@
+h1{
+    color: chartreuse;
+    background-color: black;
+}
+button{
+    padding: 18px;
+    width: 200px;
+    height: 50px;
+}
